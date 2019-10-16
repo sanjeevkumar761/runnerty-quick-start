@@ -5,8 +5,12 @@
       "name": "Chain one sample",
       "triggers": [
         {
-          "id": "schedule_default",
-          "schedule_interval": "*/1 * * * *"
+          "id":"server_default",
+          "server":{
+            "id":"server_sample_one",
+            "path":"/samplepath",
+            "method":"get"
+          }
         }
       ],
       "notifications": {

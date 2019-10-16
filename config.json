@@ -1,5 +1,18 @@
 {
+  "general": {
+    "servers": [
+      {
+        "id": "server_sample_one",
+        "port": 8080,
+        "endpoint": "/one"
+      }
+    ]
+  },
   "triggers": [
+    {
+      "id": "server_default",
+      "type": "@runnerty-trigger-server"
+    },
     {
       "id": "schedule_default",
       "type": "@runnerty-trigger-schedule"
